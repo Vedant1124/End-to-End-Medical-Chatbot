@@ -1,4 +1,4 @@
-# Instead of executing all the files we will run this temmpelate.py to execute our whole project
+# Instead of executing all the files we will run this temmpelate.py to execute our whole project it will create all the necessary files required
 import os
 from pathlib import Path
 import logging

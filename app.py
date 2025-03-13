@@ -39,7 +39,7 @@ llm=CTransformers(model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
                   config={'max_new_tokens':512,
                           'temperature':0.8})
 
-retriever = docsearch.as_retriever(search_kwargs={"k": 1}) # Example: Retrieve only 2 documents
+retriever = docsearch.as_retriever(search_kwargs={"k": 2}) # Example: Retrieve only 2 documents
 qa = RetrievalQA.from_chain_type(
     llm=llm, 
     chain_type="stuff", 
